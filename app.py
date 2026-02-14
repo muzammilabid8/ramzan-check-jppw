@@ -15,7 +15,7 @@ def load_data():
 
 df = load_data()
 
-st.write("### Please enter your phone number")
+st.write("### Please Enter Phone Number without 0 as (3001234567)")
 
 phone = st.text_input("Phone Number")
 
