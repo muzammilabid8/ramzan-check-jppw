@@ -6,7 +6,7 @@ st.set_page_config(page_title="Nigehban Ramzan Check Jalalpur Pirwala")
 
 st.title("Nigehban Ramzan Check Jalalpur Pirwala")
 
-st.write("Is app men 2000 Nigehban Ramazan Program 2026 ke Jalalpur Pirwala ki list he")
+st.write("Is app men Nigehban Ramazan Program 2026 ke Jalalpur Pirwala ki list he")
 
 # Load CSV
 @st.cache_data
