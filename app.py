@@ -6,7 +6,6 @@ st.set_page_config(page_title="Nigehban Ramzan Check Jalalpur Pirwala")
 
 st.title("Nigehban Ramzan Check Jalalpur Pirwala")
 
-st.write("Is app men Nigehban Ramazan Program 2026 ke Jalalpur Pirwala ki list he")
 
 # Load CSV
 @st.cache_data
@@ -36,3 +35,6 @@ if search_button:
             st.write(results)
         else:
             st.error(" Apka Fund Manzoor Nahi Hua, Nayi List Ka Intizar Karen❌")
+st.write("Is app men Nigehban Ramazan Program 2026 ke Jalalpur Pirwala ki list he")
+
+st.write("#####Created by: Muzammil Abid")
