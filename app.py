@@ -6,7 +6,7 @@ st.set_page_config(page_title="Nigehban Ramzan Check Jalalpur Pirwala")
 
 st.title("Nigehban Ramzan Check Jalalpur Pirwala")
 
-st.write("This app includes about 2000 benefishries of Nigehban Ramazan Program Jalalpur Pirwala")
+st.write("Is app men 2000 Nigehban Ramazan Program 2026 ke Jalalpur Pirwala ki list he")
 
 # Load CSV
 @st.cache_data
@@ -24,7 +24,7 @@ search_button = st.button("Search")
 if search_button:
 
     if phone.strip() == "":
-        st.warning("Please enter phone number")
+        st.warning("Please Enter Phone Number without 0 as (3001234567)")
     else:
         with st.spinner("Searching your record..."):
             time.sleep(1.5)
@@ -32,7 +32,7 @@ if search_button:
             results = df[df.astype(str).apply(lambda x: x.str.contains(phone, case=False)).any(axis=1)]
 
         if len(results) > 0:
-            st.success("Record Found ✅")
+            st.success("Mubarak Ho! Apka Name Nigehban Ramzan ki list me agya he. Apne Post Office se call ka wait karen or Apna Card Hasil Karen  ✅")
             st.write(results)
         else:
-            st.error("No record found ❌")
+            st.error(" Apka Fund Manzoor Nahi Hua, Nayi List Ka Intizar Karen❌")
