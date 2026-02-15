@@ -10,7 +10,8 @@ st.title("Nigehban Ramzan Check Jalalpur Pirwala")
 # Load CSV
 @st.cache_data
 def load_data():
-    return pd.read_csv("Ramzanjppw11.csv")
+    return pd.read_csv("cleaned_ramzan.csv
+")
 
 df = load_data()
 
